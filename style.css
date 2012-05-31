@@ -9,6 +9,15 @@ Version:        0.1.0
 
 @import url("../twentyeleven/style.css");
 
+a:focus,
+a:active,
+a:hover,
+.widget a:hover,
+.widget a:focus,
+.widget a:active {
+	text-decoration: none;
+}
+
 #site-title a {
   color: #fff;
 }
@@ -27,6 +36,7 @@ Version:        0.1.0
 #branding #s {
   color:#777;
   background:url("../twentyeleven/images/search.png") no-repeat scroll 5px 6px #fff;
+  width:50px;
 }
 
 #branding hgroup {
@@ -39,6 +49,10 @@ Version:        0.1.0
 
 #branding #searchform {
   right:4%;
+}
+
+#branding img {
+  margin-bottom: -9px;
 }
 
 body {
@@ -56,7 +70,7 @@ header#branding {
 #page {
   max-width:850px;
   margin:0 auto;
-  box-shadow:0px 9px 15px 6px #222222;
+  box-shadow:0 9px 19px 3px #000000;
 }
 
 #main {

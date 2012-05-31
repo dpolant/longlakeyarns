@@ -77,11 +77,6 @@ header#branding {
   padding-top:0;
 }
 
-#content {
-  margin:0 36% 0 5.6%;
-  width:64%;
-}
-
 .entry-title, 
 .singular .entry-title {
   padding-bottom:0;
@@ -162,4 +157,38 @@ header#branding {
 
 .widget {
   margin:0;
+}
+
+/* =Responsive Structure
+----------------------------------------------- */
+
+/* Reset 800px float model */
+@media (max-width: 800px) {
+  #main #content {
+    margin: 0 34% 0 7.6%;
+    width: 58.4%;
+  }
+  #main #secondary {
+    width:25.8%;
+    padding:0;
+    margin:0;
+    float:right;
+  }  
+}
+
+/* Execute sidebar drop at 650 px instead */
+@media (max-width: 650px) {
+	#main #content {
+		margin: 0 7.6%;
+		width: auto;
+	}
+	#nav-below {
+		border-bottom: 1px solid #ddd;
+		margin-bottom: 1.625em;
+	}
+	#main #secondary {
+		float: none;
+		margin: 0 7.6%;
+		width: auto;
+	}
 }
